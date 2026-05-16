@@ -3,29 +3,29 @@ import Nav from './Nav'
 
 function Header() {
 
-  const backgrounds = [
-    '/hero1.png',
-    '/hero2.png'
-  ]
+  // const backgrounds = [
+  //   '/hero1.png',
+  //   '/hero2.png'
+  // ]
 
-  const [currentBg, setCurrentBg] = useState(0)
+  // const [currentBg, setCurrentBg] = useState(0)
 
-  useEffect(() => {
+  // useEffect(() => {
 
-    const interval = setInterval(() => {
+  //   const interval = setInterval(() => {
 
-      setCurrentBg((prev) =>
-        prev === backgrounds.length - 1 ? 0 : prev + 1
-      )
+  //     setCurrentBg((prev) =>
+  //       prev === backgrounds.length - 1 ? 0 : prev + 1
+  //     )
 
-    }, 5000)
+  //   }, 5000)
 
-    return () => clearInterval(interval)
+  //   return () => clearInterval(interval)
 
-  }, [])
+  // }, [])
 
   return (
-    <div className='min-h-screen mb-4 bg-cover bg-center flex items-center w-full overflow-hidden ' style={{backgroundImage: `url(${backgrounds[currentBg]})`}} id='Header'>
+    <div className='min-h-screen mb-4 bg-cover bg-center flex items-center w-full overflow-hidden ' style={{backgroundImage: `url(/hero1.png)`}} id='Header'>
      <Nav/> 
      <div className='container text-center mx-auto py-4 px-6 md:px-20 lg:px-32 text-white'>
         <h2 className='text-5xl md:text-6xl lg:text-[82px] inline-block max-w-3xl font-semibold pt-20'>Explore homes that fit your dreams</h2>

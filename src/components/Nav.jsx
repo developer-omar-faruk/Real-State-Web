@@ -20,7 +20,7 @@ function Nav() {
     <nav className='absolute top-0 left-0 w-full z-10 overflow-hidden'>
       <div className='container mx-auto flex justify-between items-center py-4 px-6 md:px-20 lg:px-32 bg-transparent '>
         <img className='' src={assets.logo} alt="" />
-        <ul className='hidden md:flex gap-7 text-white'>
+        <ul className='hidden md:flex gap-7 text-white  bg-gray-800/30 py-2 rounded-full px-5'>
             <li><a href="#Header" className='cursor-pointer hover:text-gray-400 transition-all'>Home</a></li>
             <li><a href="#About" className='cursor-pointer hover:text-gray-400 transition-all'>About</a></li>
             <li><a href="#Projects" className='cursor-pointer hover:text-gray-400 transition-all'>Project</a></li>
